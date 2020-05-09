@@ -23,6 +23,6 @@ namespace Library.Data.Models
         public virtual IEnumerable<Patron> Patrons { get; set; }
         public virtual IEnumerable<LibraryAsset> LibraryAssets { get; set; }
 
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get; set; }   //store image about branch detail page
     }
 }
