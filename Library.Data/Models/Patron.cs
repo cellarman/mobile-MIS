@@ -18,7 +18,6 @@ namespace Library.Data.Models
         public string LastName { get; set; }
 
         [Required] public string Address { get; set; }
-
         [Required] public DateTime DateOfBirth { get; set; }
 
         public string Telephone { get; set; }

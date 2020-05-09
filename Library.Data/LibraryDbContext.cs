@@ -8,7 +8,7 @@ namespace Library.Data
         public LibraryDbContext()
         {
         }
-
+        //inherit from base
         public LibraryDbContext(DbContextOptions options) : base(options)
         {
         }
@@ -20,6 +20,7 @@ namespace Library.Data
         public virtual DbSet<LibraryBranch> LibraryBranches { get; set; }
         public virtual DbSet<BranchHours> BranchHours { get; set; }
         public virtual DbSet<LibraryCard> LibraryCards { get; set; }
+        //Table Maps to Table
         public virtual DbSet<Patron> Patrons { get; set; }
         public virtual DbSet<Status> Statuses { get; set; }
         public virtual DbSet<LibraryAsset> LibraryAssets { get; set; }

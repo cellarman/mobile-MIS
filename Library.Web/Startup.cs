@@ -20,6 +20,8 @@ namespace Library.Web
 
         public IConfiguration Configuration { get; }
 
+        //This Method gets called by the runtime.
+        //Use this method to add services to the container
         public void ConfigureServices(IServiceCollection services)
         {
 	        services.Configure<CookiePolicyOptions>(opts =>
@@ -44,7 +46,7 @@ namespace Library.Web
             services.AddDbContext<LibraryDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("LibraryConnection")));
         }
-
+        //This method gets called by the runtime.  Use this method to configure the HTTP request
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
