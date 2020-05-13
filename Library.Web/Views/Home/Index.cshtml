@@ -2,20 +2,20 @@
     ViewData["Title"] = "Home";
 }
 
-<h3>Welcome to Lakeview ILS</h3>
+<h3>Mobile Inventory Database</h3>
 
 <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--4-col">
         <div class="demo-card-square mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title mdl-card--expand" id="catalog">
-                <h2 class="mdl-card__title-text homeLabel">Library Catalog</h2>
+                <h2 class="mdl-card__title-text homeLabel">Device Inventory</h2>
             </div>
             <div class="mdl-card__supporting-text">
-                View and manage library assets.
+                View and manage device assets.
             </div>
             <div class="mdl-card__actions mdl-card--border">
                 <a class="mdl-button mdl-button--colored" asp-controller="Catalog" asp-action="Index">
-                    View Catalog
+                    View Inventory
                 </a>
             </div>
         </div>
@@ -24,14 +24,14 @@
     <div class="mdl-cell mdl-cell--4-col">
         <div class="demo-card-square mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title mdl-card--expand" id="patrons">
-                <h2 class="mdl-card__title-text homeLabel">Patrons</h2>
+                <h2 class="mdl-card__title-text homeLabel">Employees</h2>
             </div>
             <div class="mdl-card__supporting-text">
-                View and manage library patron data.
+                View and manage patron data.
             </div>
             <div class="mdl-card__actions mdl-card--border">
                 <a class="mdl-button mdl-button--colored" asp-controller="Patron" asp-action="Index">
-                    View Patron Index
+                    View Employee Index
                 </a>
             </div>
         </div>
@@ -40,14 +40,14 @@
     <div class="mdl-cell mdl-cell--4-col">
         <div class="demo-card-square mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title mdl-card--expand" id="branches">
-                <h2 class="mdl-card__title-text homeLabel">Branches</h2>
+                <h2 class="mdl-card__title-text homeLabel">DNP Department</h2>
             </div>
             <div class="mdl-card__supporting-text">
-                View and manage Lakeview branches.
+                View and manage DNP locations.
             </div>
             <div class="mdl-card__actions mdl-card--border">
                 <a class="mdl-button mdl-button--colored" asp-controller="Branch" asp-action="Index">
-                    View Branch Index
+                    View Department Inventory
                 </a>
             </div>
         </div>
